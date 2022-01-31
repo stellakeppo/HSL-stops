@@ -1,13 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Noto+Sans+JP:wght@100&family=Piazzolla:wght@100&family=Spectral:ital,wght@0,200;1,200&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #1C1C1C;
+  /*overflow-y: hidden;*/
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.mainContainer {
+  top: 0px;
+  height: auto;
+  width: 100vw;
+  background-color: #1C1C1C;
+}
+
+.textContainer{
+  width: 20vw;
+  padding-left: 5%;
+  padding-top: 5%;
+  position: absolute;
+}
+
+.svgContainer{
+  max-width: 65vw;
+}
+
+h1{
+  font-family: 'Spectral', serif;
+  color: whitesmoke;
+  font-size: 2.5em;
+}
+h2{
+  font-family: 'Spectral', serif;
+  color: whitesmoke;
+  font-size: 1.5em;
+}
+p{
+  font-family: 'Spectral', serif;
+  color: whitesmoke;
+  opacity: 1;
+}
+a{
+  text-decoration: none;
+  font-style: italic;
+  font-size: 0.8em;
+}
+.line{
+  width: 1px;
+  height: 10vh;
+  background-color: whitesmoke;
+}
+.line2{
+  width:20vw;
+  height: 1px;
+  background-color: whitesmoke;
+}
+
+#my_dataviz {
+  margin-left: 30vw;
+}
+
+#backBtn{
+  border: none;
+  display: none;
+  background-color: #1C1C1C;
+  color: whitesmoke;
+  position: absolute;
+  left: 35vw;
+  top: 90vh;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+#chart{
+  visibility: visible;
+}
+.d3-tip {
+  font-family: sans-serif;
+  background-color: whitesmoke;
+  height: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 2px;
+}
+
+.axis path{
+  stroke: whitesmoke;
+  stroke-width: 0.1px;
+}
+
+.axisLabel {
+  font-family: sans-serif;
+}
+
+g.zoom-controls {
+  cursor: pointer;
+  pointer-events: all;
+}
+g.zoom-controls rect {
+  fill: white;
+  stroke: #596877;
+  stroke-width: 1;
+}
+g.zoom-controls line {
+  stroke: #596877;
+  stroke-width: 2;
 }
