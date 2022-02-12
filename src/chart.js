@@ -104,7 +104,7 @@ function checkKey(e) {
 
     //add label
     svg.append("text")
-    .text("East to West coordinates")
+    .text("West to East coordinates")
     .attr("x", width/2.2)
     .attr("y",  height + 30)
     .attr('class', 'axisLabel')
@@ -127,7 +127,7 @@ function checkKey(e) {
 
     //add label
     svg.append("text")
-    .text("South to north coordinates")
+    .text("South to North coordinates")
     .attr("x",-100)
     .attr("y", height / 2)
     .attr("transform", "translate(-230,120) rotate(-90)")
@@ -392,8 +392,8 @@ return (
                     <div className='line'></div>
                     <p>You can brush datapoints and hit enter to zoom on a specific area or hover them to get more information of each stop.</p>
                     <div className='line2'></div>
-                    <a href='https://www.avoindata.fi/data/en_GB/dataset/hsl-n-joukkoliikenteen-pysakit1'><p style={{opacity:'0.5'}}>Transportation stops data</p></a>
-                    <a href='https://github.com/tomimick/mapcolorizer/blob/master/data-finland/data/kuntarajat.geojson'><p style={{opacity:'0.5'}}>Helsinki geodata json</p></a>
+                    <div className='linkContainer'><a href='https://www.avoindata.fi/data/en_GB/dataset/hsl-n-joukkoliikenteen-pysakit1'><p style={{opacity:'0.5'}}>Transportation stops data</p></a>
+                    <a href='https://github.com/tomimick/mapcolorizer/blob/master/data-finland/data/kuntarajat.geojson'><p style={{opacity:'0.5'}}>Helsinki geodata json</p></a></div>
                 </div>
             </div>
 

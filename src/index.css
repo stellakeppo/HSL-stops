@@ -3,7 +3,7 @@
 body {
   margin: 0;
   background-color: #1C1C1C;
-  /*overflow-y: hidden;*/
+  overflow-x: hidden;
 }
 
 .mainContainer {
@@ -106,4 +106,45 @@ g.zoom-controls rect {
 g.zoom-controls line {
   stroke: #596877;
   stroke-width: 2;
+}
+#my_dataviz {
+  margin-top: 0vh;
+}
+
+.linkContainer{
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+  #my_dataviz{
+    margin-left: 10vw;
+  }
+ 
+  .mainContainer{
+    height: 200vh;
+  }
+
+  .svgContainer{
+    max-width: 100vw;
+  }
+
+  svg{
+    width: 100%;
+    transform: translate(0px, 110vh);
+  }
+
+  .textContainer{
+    width: 80vw;
+    height: 100vh;
+    padding-left: 10vw;
+    padding-top: 10vw;
+    position: absolute;
+  }
+
+  .linkContainer{
+    display: flex;
+    justify-content: space-between;
+  }
+  
 }
